@@ -8,7 +8,7 @@ const EditPost = () => {
     const dispatch = useDispatch();
     const { id } = useParams();
     const postData = useSelector((state) => state.postReducer);
-    const [post, setPost] = useState({ image: '', likes: 0, tags: [], text: "" })
+    const [post, setPost] = useState({ image: '', likes: 0, tags: [], text: "" });
 
     useEffect(() => {
         dispatch(getPost(id));

@@ -26,7 +26,6 @@ export const commentsReducer = (comments = [], action) => {
             return action.payload;
         case CREATE_COMMENT:
             return [...comments, action.payload];
-
         default:
             return comments;
     }
